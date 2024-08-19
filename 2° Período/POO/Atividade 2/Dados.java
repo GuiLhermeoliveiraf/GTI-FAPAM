@@ -25,10 +25,9 @@ public class Dados {
         for (int num = 0; num < tamanho; num++) {
            System.out.println(arrayInvertido[num] + " ");
         }
-       
-        int maior = arrayInvertido[0];
-
+        
         // Percorre o array para encontrar o maior valor
+        int maior = arrayInvertido[0];
         for (int num = 1; num < array.length; num++) {
             if (arrayInvertido[num] > maior) {
             maior = arrayInvertido[num];
