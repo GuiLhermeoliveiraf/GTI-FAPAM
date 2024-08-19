@@ -9,32 +9,33 @@ public class Dados {
         int[] array = new int[tamanho]; // Cria o array com o tamanho especificado
         
         // Lê cada número e armazena no array
-        for (int i = 0; i < tamanho; i++) {
+        for (int num = 0; num < tamanho; num++) {
             System.out.println("Digite um número: ");
-            array[i] = scanner.nextInt();
+            array[num] = scanner.nextInt();
         }
 
         // Inverte o array
         int[] arrayInvertido = new int[tamanho];
-        for (int i = 0; i < tamanho; i++) {
-           arrayInvertido[i] = array[tamanho - 1 - i];
+        for (int num = 0; num < tamanho; num++) {
+           arrayInvertido[num] = array[tamanho - 1 - num];
         }
     
         // Exibe o array invertido
         System.out.println("Array invertido:");
-        for (int i = 0; i < tamanho; i++) {
-           System.out.println(arrayInvertido[i] + " ");
+        for (int num = 0; num < tamanho; num++) {
+           System.out.println(arrayInvertido[num] + " ");
         }
        
         int maior = arrayInvertido[0];
 
         // Percorre o array para encontrar o maior valor
-        for (int i = 1; i < array.length; i++) {
-            if (arrayInvertido[i] > maior) {
-            maior = arrayInvertido[i];
+        for (int num = 1; num < array.length; num++) {
+            if (arrayInvertido[num] > maior) {
+            maior = arrayInvertido[num];
             }
         }
 
         System.out.print("O maior número do array é: " + maior);
     }
 }
+
