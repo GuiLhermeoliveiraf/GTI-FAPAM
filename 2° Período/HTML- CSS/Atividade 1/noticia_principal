@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Notícias</h1>
+    </header>
+
+    <main>
+        <section class="noticia-detalhe">
+            <h2>Como Ronaldo e Pedrinho BH salvaram o Cruzeiro</h2>
+            <p>Pedrinho BH não poupa dinheiro, usa milhões para assinar com craques.</p>
+			<figure >
+				<img class="img-pequeno" src="C:\Users\Br super\Downloads\download (3).jpeg"> 
+			</figure>
+		</section>
+		<section class="texto">
+		<p> Pedro Lourenço assumiu a gestão da SAF do Cruzeiro após comprar 90% das ações, em abril deste ano, junto a Ronaldo Fenômeno</p>
+	</main>
+
+    <footer>
+        <p>Portal de Notícias © 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
