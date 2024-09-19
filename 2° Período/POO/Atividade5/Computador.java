@@ -49,7 +49,7 @@ public class Computador{
         return ("Marca: " + marca + " Memoria ram: " + memoriaram + " Armazenamento: " + armazenamento);
     }
 
-    // Metado que define se o computador e lento ou rapido 
+    // Metado que define se o computador é lento ou rapido 
     public boolean ehlento(){
         return memoriaram < 8;
     }
@@ -76,4 +76,3 @@ public class Computador{
 
 
 
-}   
