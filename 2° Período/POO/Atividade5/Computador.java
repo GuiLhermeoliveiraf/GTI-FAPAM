@@ -1,14 +1,17 @@
+// Criando a classe Computador 
 public class Computador{   
     private String marca;
     private int memoriaram;
     private int armazenamento ;
 
+    // Contrutor
     public Computador (){
         this.marca = "Generica";
         this.memoriaram = 4; // GB
         this.armazenamento = 500; // GB
     }
     
+    // Metados get e set 
     public String getMarca(){
         return marca;
     }
@@ -34,16 +37,19 @@ public class Computador{
         this.armazenamento = armazenamento;
     }
 
+    // Metado que atualiza os valores 
     public void Atu_valores(String marca, int memoriaram, int armazenamento){
         this.marca = marca;
         this.memoriaram = memoriaram;
         this.armazenamento = armazenamento;
     }
 
+    // Metado que exibe na tela as informações 
     public String exi_info(){
         return ("Marca: " + marca + " Memoria ram: " + memoriaram + " Armazenamento: " + armazenamento);
     }
 
+    // Metado que define se o computador e lento ou rapido 
     public boolean ehlento(){
         return memoriaram < 8;
     }
@@ -60,10 +66,9 @@ public class Computador{
             resposta = "O computador é rapido";
         }
         
-        return resposta;
-    
+        return resposta;   
     }
-
+}   
 
  
 
