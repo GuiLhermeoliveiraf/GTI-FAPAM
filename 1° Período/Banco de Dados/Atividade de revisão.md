@@ -273,4 +273,4 @@ HAVING tipo_animal = 'Pequeno'
 
 Aula ministrada pelo professor
 
-[Gabriel Ribeiro Diniz](https://www.linkedin.com/in/gabriel-r-diniz/)
+<a href="https://www.linkedin.com/in/gabriel-r-diniz/" target="_blank">Gabriel Ribeiro Diniz</a>
