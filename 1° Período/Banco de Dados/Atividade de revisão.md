@@ -1,6 +1,6 @@
 # Atividade de revisão 
 
-Banco Utilizado : 
+Banco de Dados Utilizado : 
 ```SQL
 CREATE TABLE animal(
 codigo INTEGER PRIMARY KEY,
