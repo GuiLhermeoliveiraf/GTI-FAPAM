@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Elementos Containers </title>
+        <meta charset="UTF-8">
+    </head>
+    <body id="Fundo">
+
+
+        <script type="text/javascript">
+                function login(){
+                    var nome = prompt("Qual o seu nome?","Zé Ninguem");
+                    div = document.getElementById("resultado");
+                    div.innerHTML = "Olá, " + nome.toUpperCase() + ".";
+                }
+        
+        </script>    
+        <h1>Identificação</h1>
+        <input type="button" value="Login" onclick="login()">
+        <hr>    
+        <div id ="resultado">Olá.</div>
+        
+        <p id="Texto">Texto Exemplo</p>
+        <button onclick="changeColor('blue');">Blue</button>
+        <button onclick="changeColor('red');">Red</button>
+        <script>
+            function changeColor(newColor){
+                const elem = document.getElementById("Texto");
+                elem.style.color = newColor;            
+
+            }
+            function fundo(newColor){
+                 const elem = document.getElementById("Fundo");
+                 elem.style.background = newColor; 
+            }
+        
+            function mudar(objeto,imagem){
+                lampada.src = imagem;            
+            }
+
+        </script>
+        
+        <br>
+        <p id="Fundo">Fundo</p>
+        <button onclick="fundo('black');">Black</button>
+        <button onclick="fundo('white');">White</button>
+       
+        <h1>Imagem</h1>
+        
+
+        <a onmouseover="mudar('lampada','apagada.png')" onmouseout="mudar('lampada','acesa.jpg')" >
+
+            <img src="apagada.png" width="150" border="0" id="lampada">
+        
+        </a>
+
+
+    </body>
+
+</html>
