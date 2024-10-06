@@ -104,8 +104,8 @@ uma tabela.
 (BEFORE) ou depois (AFTER) da atualização de 
 uma linha (tupla). 
 
-> NEW: Refere-se aos valores dos dados novos ou modificados, disponíveis em triggers do tipo INSERT e UPDATE.
-
+> NEW: Refere-se aos valores dos dados novos ou modificados, disponíveis em triggers do tipo INSERT e UPDATE.   
+>
 > OLD: Refere-se aos valores antigos dos dados, disponíveis em triggers do tipo UPDATE e DELETE.
 
 <br>
