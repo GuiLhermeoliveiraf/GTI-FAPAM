@@ -1,4 +1,4 @@
-# PROCEDURES
+# Procedure
 
 > Um procedimento pode executar uma série de instruções e receber parâmetros.
 
