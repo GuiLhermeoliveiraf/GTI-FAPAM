@@ -1,4 +1,4 @@
-# FUNCTION
+# Function
 >São rotinas definidas no banco de dados, identificadas 
 >por um nome pelo qual podem ser invocadas.
 
