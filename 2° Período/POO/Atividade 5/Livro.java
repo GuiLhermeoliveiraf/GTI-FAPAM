@@ -65,12 +65,7 @@ public class Livro{
         System.out.println("Publicou o livro " + getLivro());
         System.out.println("Publicado no ano de " + getAnopublicacao());
     }
-
-
-
-
-
-
+}
 
 
 
