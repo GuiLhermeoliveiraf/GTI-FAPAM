@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Biblioteca {
     private String nome;
     ArrayList<Livro> livros;
@@ -14,6 +13,7 @@ public class Biblioteca {
 
     public Biblioteca(String nome) {
         this.nome = nome;
+        this.livros = new ArrayList<Livro>();
     }
 
     public void adicionarLivro(Livro livro){
@@ -21,17 +21,25 @@ public class Biblioteca {
     }
 
     public void exibirLivros(){
-        System.out.println("Acervo " + livros.size());
+        for(Livro livro : livros){
+            System.out.println("Acevo " + livro.getLivro());
+        }
     }
 
-    public void exibirlivros(int ano, Livro publicado){
-       if(ano == publicado.getAnopublicacao()){
-            System.out.println("Acervo do ano " + ano + " : " + livros.size());
-       }
+    public void exibirlivros(int ano){
+      for(Livro livro : livros ){
+        if(ano == livro.getAnopublicacao()){
+            System.out.println(getNome());
+        }
+      }
     }
 
-    public void excluirlivros(Livro titulo){
-       livros.remove(titulo.getLivro()); 
+    public void excluirlivros(String titulo){
+       for(Livro livro : livros){
+        if(titulo == livro.getLivro()){
+            livros.remove(livro);
+        }
+       } 
     }
 
 
