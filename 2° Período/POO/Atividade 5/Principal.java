@@ -18,12 +18,14 @@ public class Principal {
     Biblioteca acervo = new Biblioteca("Fapam");
     acervo.adicionarLivro(liv1);
 
+    liv1.status();
+
     acervo.exibirLivros();
 
     System.out.println("Digite o ano em que deseja ver os livros");
-    acervo.exibirlivros(2024, liv1);
+    acervo.exibirlivros(2024);
 
-    acervo.excluirlivros(liv1);
+    acervo.excluirlivros("Teste");
 
 
 
