@@ -35,10 +35,10 @@ public class Principal {
 
         System.out.println("Digite o nome do livro que deseja excluir:");
         acervo.excluirlivros(entrada.nextLine());
-        entrada.nextLine();
+        
 
         System.out.println("Estamos encerrando nosso expedinte, obrigado por vir");
 
+        acervo.exibirLivros();
     }
-}
 }
