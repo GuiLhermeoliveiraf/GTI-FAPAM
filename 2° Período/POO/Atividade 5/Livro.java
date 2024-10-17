@@ -1,66 +1,51 @@
-public class Livro {
-    private String livro;
-    private String autor;
-    private int anopublicacao;
-    final int codigolivro;
+import java.util.ArrayList;
 
-    public Livro(String livro, String autor, int anopublicacao, int codigolivro) {
-        setLivro(livro);
-        setAutor(autor);
-        setAnopublicacao(anopublicacao);
-        this.codigolivro = codigolivro;
+public class Biblioteca {
+    private String nome;
+    ArrayList<Livro> livros;
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Livro(String livro, String autor, int anopublicacao) {
-        this.codigolivro = 0;
-        setLivro(livro);
-        setAutor(autor);
-        this.anopublicacao = 2024;
+    public String getNome() {
+        return nome;
     }
 
-    public String getLivro() {
-        return livro;
+    public Biblioteca(String nome) {
+        this.nome = nome;
+        this.livros = new ArrayList<Livro>();
+
     }
 
-    public String getAutor() {
-        return autor;
+    public void adicionarLivro(Livro livro) {
+        livros.add(livro);
     }
 
-    public int getAnopublicacao() {
-        return anopublicacao;
+    public void exibirLivros() {
+        for (Livro livro : livros) {
+            System.out.println("Acevo " + livro.getLivro());
+        }
     }
 
-    public int getCodigolivro() {
-        return codigolivro;
+    public void exibirlivros(int ano) {
+        for (Livro livro : livros) {
+            if (ano == livro.getAnopublicacao()) {
+                System.out.println("Total de coleção: " + livro.getLivro());
+            }
+
+        }
     }
 
-    public void setLivro(String livro) {
-        this.livro = livro;
+    public void excluirlivros(String titulo) {
+        for (Livro livro : livros) {
+            if (titulo.equals(livro.getLivro())) {
+                System.out.println("Livro excluido: " + titulo);
+                livros.remove(livro);
+            }
+
+        }
+
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public void setAnopublicacao(int anopublicacao) {
-        this.anopublicacao = anopublicacao;
-    }
-
-    public void exibirdetalhes() {
-        System.out.println("Apresentando o autor " + getAutor());
-        System.out.println("Publicou o livro " + getLivro());
-    }
-
-    public void status() {
-        System.out.println("Apresentando o autor " + getAutor());
-        System.out.println("Publicou o livro " + getLivro());
-        System.out.println("Publicado no ano de " + getAnopublicacao());
-    }
 }
-
-
-
-
-
-
-
