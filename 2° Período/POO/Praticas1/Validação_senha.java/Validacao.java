@@ -50,7 +50,7 @@ public class Validacao {
     public void validacao() {
         if (getSenha().length() >= 8) {     // texto.length() retorna o comprimento (número de caracteres) e verifica se o tamanho é menor que 8
                                         
-            if (getSenha().matches(".*[0-9].*")) {      // [0-9] representa qualquer dígito
+            if (getSenha().matches(".*[0-9].*")) {      // [0-9] representa qualquer int entra a String
                 if (getSenha().matches(".*[A-Z].*")) {          // [A-Z] representa qualquer letra maiúscula de A a Z
                     if (getSenha().matches(".*[^a-zA-Z0-9].*")) {       // [^a-zA-Z0-9] significa "qualquer caractere que não seja uma letra (a-z ou A-Z) ou um número (0-9)".                                               /
                         setValidacao();
