@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>NewPlace</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/MAIN_LOGO.png">
+            </a>
+        </div>
+        <nav class="navMenu">
+            <div class="linkMenu">
+                <a href="index.html">HOME</a>
+                <a href="#">IMÓVEIS</a>
+                <a href="#">CONTATO</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="linha">
+            <div class="infAbout">
+                <div class="titleTextAbout">
+                    <h2>Sobre nossa empresa</h2>
+                </div>
+                <div class="textAbout">
+                    <p>Na Imobiliária NewPlace, entendemos que encontrar o lar perfeito é uma das decisões mais importantes da sua vida. Com anos de experiência no mercado imobiliário, oferecemos uma ampla gama de propriedades que atendem a todos os estilos de vida e orçamentos. Desde apartamentos aconchegantes até casas espaçosas, nossa equipe dedicada está pronta para ajudar você em cada etapa do processo.
+                       Nosso compromisso é proporcionar um atendimento personalizado, garantindo que você se sinta seguro e confiante em sua escolha.
+                       Venha nos visitar e descubra como podemos ajudá-lo a encontrar seu novo lar!</p>
+                </div>
+                <div class="buttonAbout">
+                    <button type="button" id="botao" onclick="acaoButton()">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="imgAbout">
+                <img src="img/about.png" alt="Seu sonho está aqui!">
+            </div>
+        </section>
+        <section>
+            <hr>
+            <div class="grid-4-coluns">
+                <div class="imgList">
+                    <img src="img/apt1.png">
+                </div>
+                <div class="imgList">
+                    <img src="img/apt2.png">
+                </div>
+                <div class="imgList">
+                    <img src="img/apt3.png">
+                </div>
+                <div class="imgList">
+                    <img src="img/apt4.png">
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="grid-2-coluns">
+                <div class="coluna">
+                    <div class="imgList2">
+                        <img src="img/apt4.png" onclick="alertValor()">
+                    </div>
+                    <div class="textList2">
+                        <p>Apartamento em Balneário</p>
+                        <p>R$ 650.000,00</p>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="imgList2" onclick="alertValor()">
+                        <img src="img/apt5.png">
+                    </div>
+                    <div class="textList2">
+                        <p>Apartamento em Curitiba</p>
+                        <p>R$ 500.000,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="linha">
+        <div class="rodape">
+            <p>&copy;2024 - NewPlace</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
