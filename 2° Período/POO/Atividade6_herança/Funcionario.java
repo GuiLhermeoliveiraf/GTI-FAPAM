@@ -1,43 +1,38 @@
-public class Funcionario{
+public class Funcionario {
     private String nome;
     private float salario;
 
-    public Funcionario(String nome, float salario){
+    // Criando o metado Contrutor passando os parametros, nome e salario
+    public Funcionario(String nome, float salario) {
         setNome(nome);
         setSalario(salario);
     }
 
-    public void setNome(String nome){
+    // Metados Getters e Setters 
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setSalario(float salario){
+    public void setSalario(float salario) {
         this.salario = salario;
     }
 
-    public float getSalario(){
+    public float getSalario() {
         return salario;
     }
 
-    public String exibirDados(){
+    // Metados que exibe os dados de Funcionario
+    public String exibirDados() {
         String retorno = "";
 
         retorno = "Nome :" + getNome() + " Salario: " + getSalario();
-        
+
         return retorno;
-    
+
     }
-
-                                                        
-
-
-
-
-
-
 
 }
