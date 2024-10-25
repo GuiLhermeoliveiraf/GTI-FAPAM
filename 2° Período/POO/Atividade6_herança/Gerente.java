@@ -1,30 +1,30 @@
-public class Gerente extends Funcionario{
+// Classe Gerente que é subclasse da Classe Funcionario
+public class Gerente extends Funcionario {
     private float bonus;
 
-    public Gerente(String nome, float salario , float bonus){
-        super(nome,salario);
+    // Contrutor Sobrescrevendo, o metado da Classe Funcionario e adicionando o atributo bonus da classe gerente
+    public Gerente(String nome, float salario, float bonus) {
+        super(nome, salario);
         setBonus(bonus);
     }
 
-    public void setBonus(float bonus){
+    // Metados Getters e Setters 
+    public void setBonus(float bonus) {
         this.bonus = bonus;
     }
-    
-    public float getBonus(){
+
+    public float getBonus() {
         return bonus;
     }
-    
 
-    public String exibirDados(){
+    // Metado exibir dados sobrescrito da classe Funcionario, adicionando o bonus
+    public String exibirDados() {
         String retorno = "";
 
-        retorno = "Nome :" + getNome() + " Salario: " + getSalario() + " Bonus: " + getBonus();
-        
+        retorno = super.exibirDados() + " Bonus: " + getBonus();
+
         return retorno;
-    
+
     }
 
-
-
-
-}   
+}
