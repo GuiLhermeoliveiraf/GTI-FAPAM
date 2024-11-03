@@ -1,15 +1,19 @@
+// Criando a Classe veiculo
 public class Veiculo {
     private String modelo;
     private int ano;
     private int litros;
     private final int capacidadeTotal;
 
+    // Contrutor da classe
     public Veiculo(String modelo, int ano, int capacidadeTotal) {
         setModelo(modelo);
         setAno(ano);
         this.capacidadeTotal = capacidadeTotal;
     }
 
+    
+    // Metados Getters e Setters
     public String getModelo() {
         return modelo;
     }
@@ -34,10 +38,12 @@ public class Veiculo {
         return capacidadeTotal;
     }
 
+    // Metados de detalhes
     public String detalhes() {
         return "Modelo: " + getModelo() + ". Ano: " + getAno() + " Litros: " + getLitros();
     }
 
+    // Metados abastecer onde pega um valor inteiro como parametro e adiciona ao atributo litros se o valor for maior que 0
     public void abastacer(int litros) {
 
         if (litros > 0) {
@@ -50,6 +56,7 @@ public class Veiculo {
 
     }
 
+    // Metados abastecer maximo, coloca o atributos litros no maximo do atributo capacidade total
     public void abstacerMax() {
         this.litros = capacidadeTotal;
     }
