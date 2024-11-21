@@ -7,7 +7,6 @@ public class Utilidade {
             if (midias[i] != null) {
                 midias[i].getTitulo();
             }
-
         }
         return retorno;
     }
