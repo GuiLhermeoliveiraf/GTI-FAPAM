@@ -1,39 +1,39 @@
-public class Professor extends Pessoa{
-    private Materia materia;
+// Criando a classe Professor que herda de Pessoa
+public class Professor extends Pessoa {
     private float salario;
-    
-    
-    public Professor(String nome, int idade, String genero, float salario, Materia materia){
+
+    // Metado contrutor
+    public Professor(String nome, int idade, String genero, float salario) {
         super(nome, idade, genero);
         this.salario = salario;
-        this.materia = materia;
     }
 
-    public float getSalario(){
+    // Metado Getters e Setters
+    public float getSalario() {
         return salario;
     }
 
-    public String falar(){
+    private void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    // Metados abstratos da classe Pessoa
+    public String falar() {
         return "Vai reprovar";
     }
 
-    public String estudar(){
+    public String estudar() {
         return "Ja estou formado";
     }
 
-    public final void mudarMateria(Materia materia){
-        this.materia = materia;
+    // Metado final de reprovar aluno
+    public final String reprovarAluno(Aluno aluno) {
+        return "Aluno: " + aluno.getNome() + " Esta reprovado !!!";
     }
 
+    // Metado Aumentar salario
+    public void aumentarSalario(float salario) {
+        setSalario(getSalario() + salario);
+    }
 
-
-
-
-
-
-
-
-
-
-
-} 
+}
